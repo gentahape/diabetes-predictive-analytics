@@ -1,0 +1,223 @@
+{
+  "project_name": "Diabetes Predictive Analytics",
+  "model_type": "LightGBM Classifier",
+  "best_hyperparameters": {
+    "learning_rate": 0.01,
+    "max_depth": 5,
+    "n_estimators": 200,
+    "num_leaves": 15
+  },
+  "cv_f1_weighted": 0.9204703691752242,
+  "test_evaluation": {
+    "accuracy": 0.9184,
+    "weighted_f1": 0.919190190676068,
+    "macro_f1": 0.918335817308424,
+    "classification_report": {
+      "No Diabetes": {
+        "precision": 0.8591084204733076,
+        "recall": 1.0,
+        "f1-score": 0.9242155121373594,
+        "support": 1561.0
+      },
+      "Pre-Diabetes": {
+        "precision": 0.8261201629327902,
+        "recall": 0.9980009226510841,
+        "f1-score": 0.9039626714952295,
+        "support": 6503.0
+      },
+      "Diabetes": {
+        "precision": 0.9990316645686066,
+        "recall": 0.8643599195710456,
+        "f1-score": 0.926829268292683,
+        "support": 11936.0
+      },
+      "accuracy": 0.9184,
+      "macro avg": {
+        "precision": 0.8947534159915681,
+        "recall": 0.95412028074071,
+        "f1-score": 0.918335817308424,
+        "support": 20000.0
+      },
+      "weighted avg": {
+        "precision": 0.9318884806100829,
+        "recall": 0.9184,
+        "f1-score": 0.919190190676068,
+        "support": 20000.0
+      }
+    }
+  },
+  "target_classes": {
+    "0": "No Diabetes",
+    "1": "Pre-Diabetes",
+    "2": "Diabetes"
+  },
+  "mappings": {
+    "education_level": {
+      "No formal": 0,
+      "Highschool": 1,
+      "Postgraduate": 2,
+      "Graduate": 3
+    },
+    "income_level": {
+      "Low": 0,
+      "Lower-Middle": 1,
+      "Middle": 2,
+      "Upper-Middle": 3,
+      "High": 4
+    },
+    "nominal_columns": [
+      "gender",
+      "ethnicity",
+      "employment_status",
+      "smoking_status"
+    ],
+    "target_map": {
+      "No Diabetes": 0,
+      "Pre-Diabetes": 1,
+      "Diabetes": 2
+    }
+  },
+  "feature_importance": [
+    {
+      "feature": "glucose_fasting",
+      "importance": 1496.0
+    },
+    {
+      "feature": "age",
+      "importance": 1190.0
+    },
+    {
+      "feature": "physical_activity_minutes_per_week",
+      "importance": 1151.0
+    },
+    {
+      "feature": "hba1c",
+      "importance": 1065.0
+    },
+    {
+      "feature": "family_history_diabetes",
+      "importance": 487.0
+    },
+    {
+      "feature": "bmi",
+      "importance": 437.0
+    },
+    {
+      "feature": "heart_rate",
+      "importance": 418.0
+    },
+    {
+      "feature": "screen_time_hours_per_day",
+      "importance": 303.0
+    },
+    {
+      "feature": "sleep_hours_per_day",
+      "importance": 253.0
+    },
+    {
+      "feature": "waist_to_hip_ratio",
+      "importance": 233.0
+    },
+    {
+      "feature": "diet_score",
+      "importance": 215.0
+    },
+    {
+      "feature": "hdl_cholesterol",
+      "importance": 180.0
+    },
+    {
+      "feature": "ldl_cholesterol",
+      "importance": 171.0
+    },
+    {
+      "feature": "triglycerides",
+      "importance": 166.0
+    },
+    {
+      "feature": "cholesterol_total",
+      "importance": 152.0
+    },
+    {
+      "feature": "systolic_bp",
+      "importance": 131.0
+    },
+    {
+      "feature": "glucose_postprandial",
+      "importance": 100.0
+    },
+    {
+      "feature": "diastolic_bp",
+      "importance": 99.0
+    },
+    {
+      "feature": "hypertension_history",
+      "importance": 41.0
+    },
+    {
+      "feature": "insulin_level",
+      "importance": 40.0
+    },
+    {
+      "feature": "income_level",
+      "importance": 32.0
+    },
+    {
+      "feature": "gender_Male",
+      "importance": 13.0
+    },
+    {
+      "feature": "alcohol_consumption_per_week",
+      "importance": 12.0
+    },
+    {
+      "feature": "employment_status_Unemployed",
+      "importance": 5.0
+    },
+    {
+      "feature": "ethnicity_Hispanic",
+      "importance": 4.0
+    },
+    {
+      "feature": "smoking_status_Former",
+      "importance": 2.0
+    },
+    {
+      "feature": "ethnicity_Black",
+      "importance": 1.0
+    },
+    {
+      "feature": "ethnicity_White",
+      "importance": 1.0
+    },
+    {
+      "feature": "education_level",
+      "importance": 0.0
+    },
+    {
+      "feature": "cardiovascular_history",
+      "importance": 0.0
+    },
+    {
+      "feature": "gender_Other",
+      "importance": 0.0
+    },
+    {
+      "feature": "ethnicity_Other",
+      "importance": 0.0
+    },
+    {
+      "feature": "employment_status_Retired",
+      "importance": 0.0
+    },
+    {
+      "feature": "employment_status_Student",
+      "importance": 0.0
+    },
+    {
+      "feature": "smoking_status_Never",
+      "importance": 0.0
+    }
+  ],
+  "num_features": 35
+}
