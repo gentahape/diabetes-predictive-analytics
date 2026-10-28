@@ -876,7 +876,7 @@ with col_cert_text:
     """)
     st.markdown("<br>", unsafe_allow_html=True)
 
-    btn_col1, btn_col2 = st.columns(2)
+    btn_col1, btn_col2, btn_col3 = st.columns(3)
     with btn_col1:
         st.link_button(
             "View Course Curriculum",
@@ -887,6 +887,12 @@ with col_cert_text:
         st.link_button(
             "Verify Developer Credential",
             "https://www.dicoding.com/certificates/L4PQ25D0OZO1",
+            use_container_width=True,
+        )
+    with btn_col3:
+        st.link_button(
+            "Read Submission Report",
+            "https://github.com/gentahape/prediksi-diabetes-berdasarkan-indikator-kesehatan-dan-gaya-hidup",
             use_container_width=True,
         )
 
